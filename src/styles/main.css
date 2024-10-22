@@ -1,0 +1,112 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #333;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #222;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1%;
+}
+
+.balances {
+    color: #ddd;
+    display: flex;
+    width: 50%;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 70px;
+}
+.actions {
+    display: flex;
+    width: 50%;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 70px;
+}
+
+.actions button {
+    background-color: #444;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.actions button:hover {
+    background-color: #555;
+}
+
+.priceTable {
+    background-color: #292929;
+    width: 95%;
+    margin: auto;
+    height: 550px;
+}
+h2 {
+    margin-left: 2.5%;
+}
+.details {
+    display: flex;
+    width: 100%;
+    column-gap: 2%;
+    padding: 1% 2.5% 0% 2.5%;
+    box-sizing: border-box;
+}
+
+.operationsTable {
+    width: 70%;
+    background-color: #1a1a1a;
+    color: #fff;
+    box-sizing: border-box;
+}
+
+.operationsTable table {
+    width: 100%;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #000;
+    color: #fff;
+}
+
+tr:nth-child(even) {
+    background-color: #262626;
+}
+
+tr:hover {
+    background-color: #333333;
+}
+
+.profitIndicator {
+    background-color: #00000073;
+    border-radius: 10px;
+    width: 30%;
+    color: rgb(255, 255, 255);
+    font-size: 1.2em;
+    padding: 20px;
+}
+
+td.red {
+    color: #f00;
+}
+
+td.green {
+    color: #0f0;
+}

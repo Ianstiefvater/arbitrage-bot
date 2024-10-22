@@ -1,0 +1,50 @@
+{
+  "name": "arbitragebot",
+  "version": "1.0.0",
+  "main": "src/main.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "mocha --timeout 10000",
+    "start": "electron .", 
+    "deploy": "node scripts/deploy.js",
+    "interact": "node scripts/interact.js",
+    "build": "electron-builder build --win"
+  },
+  "build": {  
+    "appId": "com.ArbitrageBot.app",
+    "win": {
+      "target": "nsis"
+    },
+    "directories": {
+      "output": "dist"  
+    }
+  },
+  "keywords": [],
+  "author": "Ian",
+  "license": "ISC",
+  "description": "Arbitrage Bot",
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.1.0",
+    "alchemy-sdk": "^3.4.4",
+    "async": "^3.2.6",
+    "axios": "^1.7.7",
+    "bignumber.js": "^9.1.2",
+    "child_process": "^1.0.2",
+    "dotenv": "^16.4.5",
+    "electron-reload": "^2.0.0-alpha.1",
+    "node-notifier": "^10.0.1",
+    "web3": "^4.13.0"
+  },
+  "devDependencies": {
+    "@nomiclabs/hardhat-waffle": "^2.0.6",
+    "chai": "^5.1.1",
+    "electron": "^33.0.2",
+    "electron-builder": "^25.1.8",
+    "ethereum-waffle": "^4.0.10",
+    "ganache-cli": "^6.12.2",
+    "hardhat": "^2.22.13",
+    "mocha": "^10.7.3"
+  }
+}

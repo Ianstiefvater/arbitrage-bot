@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEV Arbitrage Bot</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <div class="header">
+        <div class="balances">
+            <span id="walletBalance">Wallet Balance: $0</span>
+            <span id="contractBalance">Contract Balance: $0</span>
+        </div>
+        <div class="actions">
+            <button id="assignFunds">Assign Funds</button>
+            <button id="withdrawFunds">Withdraw Funds</button>
+            <button id="startBot">Start Bot</button>
+            <button id="stopBot">Stop Bot</button>
+        </div>
+    </div>
+    <div class="priceTable">
+        <!-- Example row, dynamic content will be added here by JavaScript -->
+    </div>
+    <div class="details">
+        <div class="operationsTable">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>Type</th>
+                        <th>Amount</th>
+                        <th>Currency</th>
+                        <th>Unit Price</th>
+                        <th>DEX Origin/Destination</th>
+                        <th>Profit</th>
+                    </tr>
+                </thead>
+                <tbody id="operationsBody">
+                    <!-- Operations will be added here by JavaScript -->
+                </tbody>
+            </table>
+        </div>
+        <div class="profitIndicator">
+            <span id="totalProfit">Total Profit: $0</span>
+        </div>
+    </div>
+    <script src="scripts/ui.js"></script>
+</body>
+</html>
